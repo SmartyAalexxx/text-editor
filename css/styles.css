@@ -1,0 +1,153 @@
+
+
+@font-face {
+
+    font-family: 'Proxima nova';
+
+    src: url('../fonts/proxima_nova/proxima_nova_regular.otf') format('otf'),
+         url('../fonts/proxima_nova/proxima_nova_regular.woff2') format('woff2'),
+         url('../fonts/proxima_nova/proxima_nova_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura PT Heavy';
+	src: url('../fonts/futuraPT-heavy/FuturaPT-Heavy.eot');
+	src: url('../fonts/futuraPT-heavy/FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/futuraPT-heavy/FuturaPT-Heavy.woff') format('woff'),
+	url('../fonts/futuraPT-heavy/FuturaPT-Heavy.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;}
+
+
+
+*{
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #464f54;
+    min-height: 100%;
+    font: 27px/1.6 Georgia, "Time New Roman", serif;
+    color: #000;
+    position: relative;
+}
+
+.post {
+    background-color: #fff;
+    width: 1060px;
+    margin: 150px auto 50px;
+    padding: 190px 130px 50px;
+    position: relative;
+    box-shadow: 0 0 35px 5px rgba(0,0,0,.5); 
+}
+
+.post:before {
+    content: '';
+    border-left: 2px solid #e8eced;
+    position: absolute;
+    left: 70px;
+    top: 0;
+    bottom: 0;
+}
+
+.post__suptitle {
+    color: #b4b4b4;
+    font: 20px 'Proxima nova', serif;
+    text-transform: uppercase;
+    letter-spacing: 3px
+}
+.post__suptitle time:not(:empty):before {
+    content: ', '
+
+}
+
+.post__title {
+    color: #2a2a2a;
+    font: 78px/1.1 'Futura PT Heavy', sans-serif;
+    text-transform: uppercase;
+    margin: 40px 0 15px 0;
+    
+}
+
+.post__subtitle {
+    color: #b4b4b4;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.post__text {
+    margin: 50px 0;
+}
+
+.editor {
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    width: 70%;
+    right: 0;
+    top: -120px;
+
+}
+
+.editor__area{
+    background: #181818;
+    padding: 50px 0 60px 50px;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.5); 
+}
+
+.editor__buttons {
+    padding: 15px 30px;
+    background-color: #fbc02d; 
+    margin-left: 60px; 
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.5);   
+    
+}
+
+.editor__label {
+    color: #b4b4b4;
+    font: 15px 'Proxima nova', serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: block;
+
+}
+
+.editor__input {
+     display: block;
+     width: 100%;
+     background: transparent;
+     border: none;
+     border-bottom: 2px solid rgba( 255,255,255,.1);
+     padding: 10px 15px 15px 0;
+     font: 48px/1 'Playfair Display', serif;
+     color: #fff
+}
+
+.editor__buttons a {
+    padding: 5px 10px;
+    color: #fff;
+    opacity: 0.5;
+    transition: opacity .2s ease-in;
+}
+.editor__buttons a:hover,
+.editor__buttons a:active,
+.editor__buttons a:focus {
+    opacity: 1;
+
+}
+.editor__buttons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.editor__buttons li {
+    display: inline-block;
+}
